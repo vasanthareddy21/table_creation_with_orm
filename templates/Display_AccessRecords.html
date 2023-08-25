@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Display_AccessRecords</h1>
+        <table border="2">
+        <tr >
+            <th>name</th>
+            <th>date</th>
+            <th>author</th>
+            <th>email</th>
+        </tr>
+        {% for aro in QSARO %}
+        <tr>
+            <td>{{aro.name}}</td>
+            <td>{{aro.date}}</td>
+            <td>{{aro.author}}</td>
+            <td>{{aro.email}}</td>
+
+
+        </tr>
+        {% endfor %}
+    </table>
+    </center>
+</body>
+</html>
