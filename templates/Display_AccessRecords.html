@@ -8,15 +8,15 @@
 <body>
     <center>
         <h1>Display_AccessRecords</h1>
-        <table border="2">
-        <tr >
+        <table border="2" style="background-color: aqua;">
+        <tr style="color: black;">
             <th>name</th>
             <th>date</th>
             <th>author</th>
             <th>email</th>
         </tr>
         {% for aro in QSARO %}
-        <tr>
+        <tr style="color: brown;">
             <td>{{aro.name}}</td>
             <td>{{aro.date}}</td>
             <td>{{aro.author}}</td>
